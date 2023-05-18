@@ -1,9 +1,14 @@
+import Background from "../Background/Background";
+import Gallery from "../Gallery/Gallery";
+import ProductsCategory from "../ProductsCategory/ProductsCategory";
 
 
 const Home = () => {
     return (
         <div>
-            <h2>This is home</h2>
+            <Background></Background>
+            <Gallery></Gallery>
+            <ProductsCategory></ProductsCategory>
         </div>
     );
 };
