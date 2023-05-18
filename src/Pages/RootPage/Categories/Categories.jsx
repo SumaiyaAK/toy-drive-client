@@ -19,7 +19,7 @@ const Categories = () => {
                         <h2 className="card-title">TurboTron Racer</h2>
                         <p>Buckle up and get ready for an adrenaline-fueled experience with the TurboTron Racer remote-controlled car! This cutting-edge racer combines sleek design with turbocharged performance. Its powerful motor delivers lightning-fast acceleration, allowing you to leave competitors in the dust.</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const Categories = () => {
                         <h2 className="card-title">MegaSpeed Phantom</h2>
                         <p>Prepare to enter a world of speed with the MegaSpeed Phantom remote-controlled car! This beast of a racer is built for maximum velocity, </p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const Categories = () => {
                         <h2 className="card-title">Speedster Supreme</h2>
                         <p>Experience the thrill of speed with our Speedster Supreme remote-controlled car! This sleek and stylish racer is built for performance, with its aerodynamic design and powerful motor.</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const Categories = () => {
                         <h2 className="card-title">Thunderbolt Racer</h2>
                         <p>Unleash the power of the Thunderbolt Racer, the ultimate remote-controlled car that combines style and speed! With its eye-catching design and lightning-fast acceleration, this car is sure to leave a lasting impression.</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Categories = () => {
                         <h2 className="card-title">Construction Sets</h2>
                         <p>Unleash your creativity and build your own world of imagination with our construction sets! These sets provide endless opportunities for hands-on fun and learning.</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const Categories = () => {
                         <h2 className="card-title">Train</h2>
                         <p>All aboard for a railway adventure with our captivating train sets! Immerse yourself in the world of locomotives, tracks. Assemble the tracks and watch your train come to life as it chugs along the rails.</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Shop Now</button>
+                        <button className="btn btn-outline  btn-error">Shop Now</button>
                         </div>
                     </div>
                 </div>
