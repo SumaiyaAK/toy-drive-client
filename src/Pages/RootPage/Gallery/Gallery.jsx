@@ -3,10 +3,10 @@
 const Gallery = () => {
     return (
         
-        <div className="pb-20 bg-gray-800">
-            <h1 className="pt-20  text-center text-red-500 text-4xl font-bold">Toy Drive: Gallery Scroll. Ignite Your Imagination!</h1>
-        <div className="mx-60 my-20 flex gap-20">
-            <div className="h-96 carousel carousel-vertical rounded-box">
+        <div className="pb-20 bg-gray-800 ">
+            <h1 className="pt-20 mb-20 text-center text-red-500 text-4xl font-bold">Toy Drive: Gallery Scroll. Ignite Your Imagination!</h1>
+        <div className="mx-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="h-96 w-72 carousel carousel-vertical ">
                 <div className="carousel-item h-full w-full">
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" />
                 </div>
@@ -21,7 +21,7 @@ const Gallery = () => {
                 </div>
             
             </div>
-            <div className="h-96 carousel carousel-vertical rounded-box">
+            <div className="h-96 w-72 carousel carousel-vertical rounded-box">
             
                 <div className="carousel-item h-full">
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1592916485147-1e38fc823d21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
@@ -33,7 +33,7 @@ const Gallery = () => {
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1590559350077-01245b05020a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />
                 </div>
             </div>
-            <div className="h-96 carousel carousel-vertical rounded-box">
+            <div className="h-96 w-72 carousel carousel-vertical rounded-box">
             
                 <div className="carousel-item h-full">
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1519581246333-78162706b927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" />
@@ -45,7 +45,7 @@ const Gallery = () => {
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1536454891705-7f5a5c762d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=681&q=80" />
                 </div>
             </div>
-            <div className="h-96 carousel carousel-vertical rounded-box">
+            <div className="h-96 w-72 carousel carousel-vertical rounded-box">
             
                 <div className="carousel-item h-full">
                     <img className='h-full w-80' src="https://images.unsplash.com/photo-1546464677-47822f0f2165?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" />

@@ -1,6 +1,7 @@
 import Background from "../Background/Background";
 import Gallery from "../Gallery/Gallery";
 import ProductsCategory from "../ProductsCategory/ProductsCategory";
+import ToyDonate from "../ToyDonate/ToyDonate";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Background></Background>
             <Gallery></Gallery>
             <ProductsCategory></ProductsCategory>
+            <ToyDonate></ToyDonate>
         </div>
     );
 };
