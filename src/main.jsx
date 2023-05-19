@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Blog from './Pages/Blog/Blog';
 
 
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home></Home>
 
+      },
+      {
+        path: 'blog',
+        element: <Blog></Blog>
       }
     ]
   },

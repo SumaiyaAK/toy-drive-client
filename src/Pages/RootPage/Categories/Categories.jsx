@@ -16,7 +16,7 @@ const Categories = () => {
                 <div className="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="https://img.freepik.com/free-photo/high-angle-kids-playing-with-electric-car_23-2148243620.jpg?w=1380&t=st=1684423596~exp=1684424196~hmac=f700787717123e898047fbbd304ed1f1bb653630b65a76e2ee55830bb96efe83" alt="Shoes" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">TurboTron Racer</h2>
+                        <h2 className="card-title">Name:TurboTron Racer</h2>
                         <p>Buckle up and get ready for an adrenaline-fueled experience with the TurboTron Racer remote-controlled car! This cutting-edge racer combines sleek design with turbocharged performance. Its powerful motor delivers lightning-fast acceleration, allowing you to leave competitors in the dust.</p>
                         <div className="card-actions justify-end">
                         <button className="btn btn-outline  btn-error">Shop Now</button>
