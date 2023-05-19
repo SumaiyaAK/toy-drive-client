@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import Blog from './Pages/Blog/Blog';
 import AllToys from './Pages/AllToys/AllToys';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 
 
 
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: 'alltoys',
         element: <AllToys></AllToys>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'register',
+        element: <Register></Register>
       }
     ]
   },
