@@ -12,6 +12,7 @@ import Blog from './Pages/Blog/Blog';
 import AllToys from './Pages/AllToys/AllToys';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import AuthProviders from './Providers/AuthProviders';
 
 
 
@@ -48,8 +49,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div className=''>
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <AuthProviders>
+        <RouterProvider router={router} />
+      </AuthProviders>
     </React.StrictMode>
-    </div>
+  </div>
   ,
 )
