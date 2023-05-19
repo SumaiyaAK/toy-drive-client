@@ -1,0 +1,74 @@
+[
+    {
+        "_id": "001",
+        "toys_id":"2",
+        "Seller": "Speedy Wheels",
+        "Toy Name": "Turbo Racer",
+        "Img":"https://img.freepik.com/free-photo/purple-white-race-car-with-word-speed-side_1340-25737.jpg?w=1380&t=st=1684477151~exp=1684477751~hmac=8caf7fe384fb8a8715cf2beb1391485bb701ce2bbf5bc3e245274efd0d631ffe",
+        "Sub-Category": "Sports Car",
+        "Rating": 4.5,
+        "Price": "$29.99",
+        "Available Quantity": "10",
+        "Description": "The Turbo Racer from Speedy Wheels is a thrilling remote-controlled sports car. With its sleek design and powerful motor, it can race through any track with speed and precision. The Turbo Racer comes with a responsive remote control that allows you to maneuver it effortlessly. It features realistic sound effects, working headlights, and adjustable speed settings. Get ready for high-speed adventures with the Turbo Racer!"
+    },
+    {
+        "_id": "002",
+        "toys_id":"1",
+        "Seller": "FunZone Toys",
+        "Toy Name": "City Cruiser",
+        "Img":"https://img.freepik.com/free-photo/red-car-with-christmas-ball-top_1252-296.jpg?w=1380&t=st=1684477339~exp=1684477939~hmac=d40cf8a0ab8dc3b643755d66cc1a8c1d47c2616856425cc55350e0c0da73e665",
+        "Sub-Category": "Regular Car",
+        "Rating": 4.2,
+        "Price": "$19.99",
+        "Available Quantity": 5,
+        "Description": "The City Cruiser by FunZone Toys is a classic regular car toy that provides hours of imaginative play. It is designed with attention to detail, featuring realistic styling and vibrant colors. The City Cruiser is built to withstand rough play and is made from durable materials. Whether you're driving through the city streets or embarking on a pretend road trip, the City Cruiser is ready for all kinds of adventures."
+    },
+    {
+        "_id": "003",
+        "toys_id":"3",
+        "Seller": "Monster Trucks Galore",
+        "Toy Name": "Mega Monster",
+        "Img":"https://img.freepik.com/free-photo/supply-chain-representation-with-yellow-truck_23-2149853111.jpg?w=1380&t=st=1684477588~exp=1684478188~hmac=736d2a4b5260829fd4f7e982353169e9dd4b8aa95f9a83d8c0a5babcd071a0e3",
+        "Sub-Category": "Truck",
+        "Rating": 3.8,
+        "Price": "$39.99",
+        "Available Quantity": 8,
+        "Description": "The Mega Monster truck from Monster Trucks Galore is a rugged and powerful toy truck that can conquer any terrain. With its oversized wheels, suspension system, and durable construction, it is built for off-road adventures. The Mega Monster features realistic details, such as a raised chassis, large exhaust pipes, and a monster-inspired design. It's perfect for kids who love big and bold trucks."
+    },
+    {
+        "_id": "004",
+        "toys_id":"1",
+        "Seller": "Tiny Drivers",
+        "Toy Name": "Mini Speedsters",
+        "Img":"https://img.freepik.com/free-photo/toy-car-with-pinecone-top_1252-11.jpg?w=1380&t=st=1684477493~exp=1684478093~hmac=e8746353349870f8e79eb89d0f7f2c862dba9d49c7713bf43177b2550e6cb8d0",
+        "Sub-Category": "Regular Car",
+        "Rating": 3.5,
+        "Price": "$9.99",
+        "Available Quantity": 15,
+        "Description": "The Mini Speedsters by Tiny Drivers are adorable and compact toy cars that provide endless fun. With their small size, they are perfect for little hands to grasp and race around. The Mini Speedsters feature vibrant colors and smooth rolling wheels. They are made from child-safe materials, ensuring a safe playtime experience. Let your little ones zoom around with the Mini Speedsters!"
+    },
+    {
+        "_id": "005",
+        "toys_id":"2",
+        "Seller": "Gear Shift Toys",
+        "Toy Name": "Drift King",
+        "Img":"https://img.freepik.com/free-photo/driver-finishing-race_1048-1997.jpg?w=996&t=st=1684477262~exp=1684477862~hmac=bb082f03574983e0b13ecd0d77c5694b33ec8a1ea94e59475521a0e812a1f038",
+        "Sub-Category": "Sports Car",
+        "Rating": 3.3,
+        "Price": "$24.99",
+        "Available Quantity": 3,
+        "Description": "The Drift King by Gear Shift Toys is the ultimate sports car toy for young racing enthusiasts. Its sleek and aerodynamic design allows for high-speed drifting and precision maneuvering. The Drift King features a remote control with responsive controls, allowing for seamless control on any racing surface. With its realistic sound effects and working headlights, the Drift King brings the thrill of professional racing right to your living room!"
+    },
+    {
+        "_id": "006",
+        "toys_id":"3",
+        "Seller": "Mega Toy Store",
+        "Toy Name": "Turbo Hauler",
+        "Img":"https://img.freepik.com/free-photo/forklift-boxes-arrangement_23-2149853133.jpg?w=1380&t=st=1684477635~exp=1684478235~hmac=3fcfc78087a961618bd0939309b479cd882c0639757667a914cffac591c44b41",
+        "Sub-Category": "Truck",
+        "Rating": 4.8,
+        "Price": "$49.99",
+        "Available Quantity": 12,
+        "Description": "The Turbo Hauler by Mega Toy Store is a versatile and powerful toy truck that can handle heavy-duty hauling. Whether you're transporting construction materials or other toy vehicles, the Turbo Hauler is up to the task. It features a sturdy build, realistic details, and a working cargo bed. The Turbo Hauler is perfect for young builders and truck enthusiasts who love imaginative play and construction adventures!"
+    }
+]

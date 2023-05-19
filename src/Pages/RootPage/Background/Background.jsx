@@ -2,7 +2,7 @@
 
 const Background = () => {
     return (
-        <div className="mx-auto">
+        <div className="">
             <div className="hero min-h-screen" style={{ backgroundImage: `url("https://img.freepik.com/free-photo/kid-playing-home_23-2148131061.jpg?w=1380&t=st=1684402836~exp=1684403436~hmac=2c0542e337193cef6ec44c1b51fa1bde63f09acad0bc9b928b880d18bf0cfd71")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">

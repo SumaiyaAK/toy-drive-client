@@ -9,10 +9,10 @@ const NavBar = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-stone-800 px-12 py-4">
+            <div className="navbar bg-stone-200 px-12 py-4">
                 <div className="navbar-start">
                     
-                    <a className="btn btn-ghost normal-case text-xl text-red-500">ToyDrive</a>
+                    <a className="btn btn-ghost normal-case text-xl text-red-600">ToyDrive</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
