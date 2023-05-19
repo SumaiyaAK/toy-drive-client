@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Blog from './Pages/Blog/Blog';
+import AllToys from './Pages/AllToys/AllToys';
 
 
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: 'alltoys',
+        element: <AllToys></AllToys>
       }
     ]
   },
