@@ -27,8 +27,8 @@ const CarDetails = () => {
                     <p>Rating: {Sub_Category}</p>
                     <p>Rating: {Seller}</p>
                     <div className="card-actions justify-end">
-                        <Link to={`/checkout/${_id}`}>
-                        <button className="btn btn-primary">Add A Toy</button>
+                        <Link to={`/addToy/${_id}`}>
+                        <button className="btn btn-outline btn-error">Add A Toy</button>
                         </Link>
                     </div>
                 </div>

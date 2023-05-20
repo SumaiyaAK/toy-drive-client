@@ -14,6 +14,7 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import AuthProviders from './Providers/AuthProviders';
 import CarDetails from './Pages/RootPage/CarDetails/CarDetails';
+import AddToy from './Pages/AddToy/AddToy';
 
 
 
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
       {
         path: 'car_details',
         element: <CarDetails></CarDetails>
+      },
+      {
+        path: 'addToy/:id',
+        element: <AddToy></AddToy>,
+        loader: ({params}) => fetch(`http://localhost:5000/alltoys/${params.id}`)
       }
     ]
   },
