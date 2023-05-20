@@ -1,9 +1,10 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const CarDetails = () => {
     let { state } = useLocation();
 
     let description = (state != null) ? state['Description'] : null;
+    let _id = (state != null) ? state['_id'] : null;
     let price = (state != null) ? state['Price'] : null;
     let rating = (state != null) ? state['Rating'] : null;
     let AvailableQuantity = (state != null) ? state['AvailableQuantity'] : null;
@@ -26,7 +27,9 @@ const CarDetails = () => {
                     <p>Rating: {Sub_Category}</p>
                     <p>Rating: {Seller}</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Listen</button>
+                        <Link to={`/checkout/${_id}`}>
+                        <button className="btn btn-primary">Add A Toy</button>
+                        </Link>
                     </div>
                 </div>
             </div>

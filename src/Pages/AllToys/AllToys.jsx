@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 
 const AllToys = () => {
+  let { state } = useLocation();
   const [toys, setAlltoys] = useState([]);
 
   useEffect(() => {
@@ -9,6 +11,8 @@ const AllToys = () => {
       .then(res => res.json())
       .then(data => setAlltoys(data))
   }, [])
+
+  let description = (state != null) ? state['Description'] : null;
   return (
     <div>
       <h1>All Toys</h1>
@@ -34,7 +38,7 @@ const AllToys = () => {
               <tr>
                 <th>1</th>
                 <td>{toys.ToyName}</td>
-                <td>Quality Control Specialist</td>
+                <td>{description}</td>
                 <td>Littel, Schaden and Vandervort</td>
                 <td>Canada</td>
                 <td>12/16/2020</td>
