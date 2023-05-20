@@ -13,6 +13,7 @@ import AllToys from './Pages/AllToys/AllToys';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import AuthProviders from './Providers/AuthProviders';
+import CarDetails from './Pages/RootPage/CarDetails/CarDetails';
 
 
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: 'register',
         element: <Register></Register>
+      },
+      {
+        path: 'car_details',
+        element: <CarDetails></CarDetails>
       }
     ]
   },

@@ -1,6 +1,6 @@
 [
     {
-        "_id": "001",
+        
         "toys_id":"2",
         "Seller": "Speedy Wheels",
         "ToyName": "Turbo Racer",
@@ -12,7 +12,7 @@
         "Description": "The Turbo Racer from Speedy Wheels is a thrilling remote-controlled sports car. With its sleek design and powerful motor, it can race through any track with speed and precision. The Turbo Racer comes with a responsive remote control that allows you to maneuver it effortlessly. It features realistic sound effects, working headlights, and adjustable speed settings. Get ready for high-speed adventures with the Turbo Racer!"
     },
     {
-        "_id": "002",
+        
         "toys_id":"1",
         "Seller": "FunZone Toys",
         "ToyName": "City Cruiser",
@@ -24,7 +24,7 @@
         "Description": "The City Cruiser by FunZone Toys is a classic regular car toy that provides hours of imaginative play. It is designed with attention to detail, featuring realistic styling and vibrant colors. The City Cruiser is built to withstand rough play and is made from durable materials. Whether you're driving through the city streets or embarking on a pretend road trip, the City Cruiser is ready for all kinds of adventures."
     },
     {
-        "_id": "003",
+        
         "toys_id":"3",
         "Seller": "Monster Trucks Galore",
         "ToyName": "Mega Monster",
@@ -36,7 +36,7 @@
         "Description": "The Mega Monster truck from Monster Trucks Galore is a rugged and powerful toy truck that can conquer any terrain. With its oversized wheels, suspension system, and durable construction, it is built for off-road adventures. The Mega Monster features realistic details, such as a raised chassis, large exhaust pipes, and a monster-inspired design. It's perfect for kids who love big and bold trucks."
     },
     {
-        "_id": "004",
+        
         "toys_id":"1",
         "Seller": "Tiny Drivers",
         "ToyName": "Mini Speedsters",
@@ -48,7 +48,7 @@
         "Description": "The Mini Speedsters by Tiny Drivers are adorable and compact toy cars that provide endless fun. With their small size, they are perfect for little hands to grasp and race around. The Mini Speedsters feature vibrant colors and smooth rolling wheels. They are made from child-safe materials, ensuring a safe playtime experience. Let your little ones zoom around with the Mini Speedsters!"
     },
     {
-        "_id": "005",
+        
         "toys_id":"2",
         "Seller": "Gear Shift Toys",
         "ToyName": "Drift King",
@@ -60,7 +60,7 @@
         "Description": "The Drift King by Gear Shift Toys is the ultimate sports car toy for young racing enthusiasts. Its sleek and aerodynamic design allows for high-speed drifting and precision maneuvering. The Drift King features a remote control with responsive controls, allowing for seamless control on any racing surface. With its realistic sound effects and working headlights, the Drift King brings the thrill of professional racing right to your living room!"
     },
     {
-        "_id": "006",
+        
         "toys_id":"3",
         "Seller": "Mega Toy Store",
         "ToyName": "Turbo Hauler",
