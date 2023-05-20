@@ -1,43 +1,105 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 
 const AddToy = () => {
     const addToys = useLoaderData();
-    const { ToyName, _id } = addToys;
+    const { ToyName, _id, Price } = addToys;
+    const {user} = useContext(AuthContext);
+
+    const handleAddToys = event =>{
+        event.preventDafault();
+
+        const form = event.target;
+        const name = form.name.value;
+        const Photo_URL = form.Photo_URL.value;
+        // const seller_name = form.seller_name.value;
+        const Sub_category = form.Sub_category.value;
+        const Price = form.Price.value;
+        const Rating = form.Rating.value;
+        const email = user?.email;
+
+        const addToysPost = {
+            sellerName: name,
+            email,
+            Price,
+            toy_id: _id,
+            Sub_category,
+            Rating,
+            Photo_URL
+
+        }
+        console.log(addToysPost)
+
+    }
     return (
-        <div>
-            <h1>Add A Toy: {ToyName}</h1>
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <div className="max-w-7xl mx-auto min-h-screen">
+            <h1 className="text-center font-bold mt-20 text-3xl text-red-600">Add A Toy: {ToyName}</h1>
+
+            <div className="card-body">
+                <form>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Toy Photo URL</span>
+                        </label>
+                        <input type="text" name="Photo_URL" placeholder="Photo Url" className="input input-bordered" />
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <div className="card-body">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="text" placeholder="email" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <input type="text" placeholder="password" className="input input-bordered" />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
-                            </div>
-                        </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Name</span>
+                        </label>
+                        <input type="text" name="name" placeholder="Name" className="input input-bordered" />
+
                     </div>
-                </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Seller name</span>
+                        </label>
+                        <input type="text" name="seller_name" defaultValue={user?.displayName} placeholder="Name" className="input input-bordered" />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Seller email</span>
+                        </label>
+                        <input type="text" name="seller_name" defaultValue={user?.email} placeholder="seller_email" className="input input-bordered" />
+
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Sub-category</span>
+                        </label>
+                        <input type="text" name="Sub_category" placeholder="Sub-category" className="input input-bordered" />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Price</span>
+                        </label>
+                        <input type="text" defaultValue={Price} name="Price" placeholder="Price" className="input input-bordered" />
+
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Rating</span>
+                        </label>
+                        <input type="text" name="Rating" placeholder="Rating" className="input input-bordered" />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">Available quantity</span>
+                        </label>
+                        <input type="text" name="Available quantity" placeholder="Available quantity" className="input input-bordered" />
+
+                    </div>
+                    </div>
+                    <div className="form-control mt-6">
+                        <input className="btn btn-error btn-outline"type="submit" value="Added Toy"></input>
+                    </div>
+                </form>
             </div>
         </div>
+
     );
 };
 
