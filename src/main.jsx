@@ -17,6 +17,8 @@ import CarDetails from './Pages/RootPage/CarDetails/CarDetails';
 import AddToy from './Pages/AddToy/AddToy';
 import MyToy from './Pages/MyToy/MyToy';
 import PrivateRoute from './PrivateRoute';
+import Error from './Error/Error';
+
 
 
 
@@ -58,10 +60,15 @@ const router = createBrowserRouter([
       {
         path: 'MyToy',
         element: <PrivateRoute><MyToy></MyToy></PrivateRoute>,
-        // loader: ({params}) => fetch(`http://localhost:5000/alltoys/${params.id}`)
-      }
+        
+      },
+      
     ]
   },
+  {
+    path: '/*',
+    element: <Error></Error>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

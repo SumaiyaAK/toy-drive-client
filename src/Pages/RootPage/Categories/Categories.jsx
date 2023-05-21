@@ -44,7 +44,7 @@ const Categories = () => {
         for (let categoryindex = 0; categoryindex < carCategories.length; categoryindex++) {
             let tabElement = [];
             for (let toyIndex = 0; toyIndex < toys.length; toyIndex++) {
-                if (toys[toyIndex]['Sub-Category'] == carCategories[categoryindex]) {
+                if (toys[toyIndex]['Sub_Category'] == carCategories[categoryindex]) {
                     
                     let imageElement = <figure><img className='w-2/5' src={toys[toyIndex]['Img']} alt="cars" /></figure>;
                     

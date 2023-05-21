@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import AllToysRow from "./AllToysRow";
+
+
 
 
 const AllToys = () => {
-  let { state } = useLocation();
+ 
   const [toys, setAlltoys] = useState([]);
 
   useEffect(() => {
@@ -12,55 +14,50 @@ const AllToys = () => {
       .then(data => setAlltoys(data))
   }, [])
 
-  let description = (state != null) ? state['Description'] : null;
-  return (
-    <div>
-      <h1>All Toys</h1>
-      <p>Number of Toys: {toys.length}</p>
-      <div className="overflow-x-auto">
-        <table className="table table-compact w-full">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>company</th>
-              <th>location</th>
-              <th>Last Login</th>
-              <th>Favorite Color</th>
-            </tr>
-          </thead>
-          {
-            toys.map(toy => <tbody
-             key={toy._id}
-             
-            >
-              <tr>
-                <th>1</th>
-                <td>{toys.ToyName}</td>
-                <td>{description}</td>
-                <td>Littel, Schaden and Vandervort</td>
-                <td>Canada</td>
-                <td>12/16/2020</td>
-                <td>Blue</td>
-              </tr>
   
-            </tbody>)
-          }
-          <tfoot>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>company</th>
-              <th>location</th>
-              <th>Last Login</th>
-              <th>Favorite Color</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-    </div>
+  return (
+    <div className=" max-w-7xl mx-auto min-h-screen">
+            <h2 className="text-3xl text-center my-8 glass font-bold text-red-600">All Toys:</h2>
+            <div className="overflow-x-auto bg-black-500 w-full glass">
+                <table className="table w-full">
+                    {/* head */}
+                    <thead>
+                        <tr>
+                            <th>
+                                <label>
+                                    <input type="checkbox" className="checkbox" />
+                                </label>
+                            </th>
+                        <th>Image</th>                            
+                            <th>Seller Name</th>
+                            
+                            <th>Car Name</th>
+                            <th>Sub Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {
+                          toys.map(allToys => <AllToysRow
+                          key={allToys._id}
+                          allToys={allToys}
+                          
+                          >
+
+                          </AllToysRow>)
+                       }
+                        
+                       
+                        
+                    </tbody>
+                  
+
+                </table>
+            </div>
+        </div>
 
 
 

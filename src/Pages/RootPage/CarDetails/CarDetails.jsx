@@ -8,7 +8,7 @@ const CarDetails = () => {
     let price = (state != null) ? state['Price'] : null;
     let rating = (state != null) ? state['Rating'] : null;
     let AvailableQuantity = (state != null) ? state['AvailableQuantity'] : null;
-    let Sub_Category = (state != null) ? state['Sub-Category'] : null;
+    let Sub_Category = (state != null) ? state['Sub_Category'] : null;
     let Seller = (state != null) ? state['Seller'] : null;
     let ToyName = (state != null) ? state['ToyName'] : null;
     let Img = (state != null) ? state['Img'] : null;
@@ -23,9 +23,9 @@ const CarDetails = () => {
                     <p>Description: {description}</p>
                     <p>Price:{price}</p>
                     <p>Rating: {rating}</p>
-                    <p>Rating: {AvailableQuantity}</p>
-                    <p>Rating: {Sub_Category}</p>
-                    <p>Rating: {Seller}</p>
+                    <p>Quantity: {AvailableQuantity}</p>
+                    <p>Category: {Sub_Category}</p>
+                    <p>Seller Name: {Seller}</p>
                     <div className="card-actions justify-end">
                         <Link to={`/addToy/${_id}`}>
                         <button className="btn btn-outline btn-error">Add A Toy</button>
