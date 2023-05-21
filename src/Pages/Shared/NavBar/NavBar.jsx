@@ -18,7 +18,10 @@ const NavBar = () => {
         <li><Link to='/'><a className="text-red-500">Home</a></Link></li>
         <li><Link to='alltoys'><a className="text-red-500">All Toys</a></Link></li>
         <li><Link to='blog'><a className="text-red-500">Blogs</a></Link></li>
-        { user?.email? <li><button onClick={handleLogOut}>Log out</button></li>      :<li><Link to='/login'><a className="text-red-500">Login</a></Link></li>
+        { user?.email? <>
+            <li><Link to='/MyToy'><a className="text-red-500">My Toy</a></Link></li>
+            <li><button onClick={handleLogOut}>Log out</button></li>
+        </>  :<li><Link to='/login'><a className="text-red-500">Login</a></Link></li>
         }
     </>
     return (
