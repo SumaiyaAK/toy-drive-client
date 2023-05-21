@@ -14,8 +14,26 @@ const MyToy = () => {
             .then(data => setAddToy(data))
     }, [])
 
+    const handleDelete = id => {
+        const proceed = confirm('Are You Sure! You Want to Delete');
+        if(proceed){
+           fetch(`http://localhost:5000/addtoy/${id}`, {
+            method: 'DELETE'
+           })
+           .then(res => res.json())
+           .then(data => {
+             console.log(data);
+             if(data.deleteCount > 0){
+                alert('deleted successfully')
+                const remaining = addToy.filter(toy => toy._id !== id)
+                setAddToy(remaining);
+             }
+           })
+        }
+    }
+
     return (
-        <div>
+        <div className=" max-w-7xl mx-auto min-h-screen">
             <h2 className="text-5xl">My Toys: {addToy.length}</h2>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
@@ -27,12 +45,13 @@ const MyToy = () => {
                                     <input type="checkbox" className="checkbox" />
                                 </label>
                             </th>
-                            <th>Name</th>
+                        <th>Image</th>                            
                             <th>Seller Name</th>
                             <th>Email</th>
                             <th>Car Name</th>
                             <th>Sub Category</th>
                             <th>Price</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -40,6 +59,7 @@ const MyToy = () => {
                           addToy.map(myToy => <MyToyRow
                           key={myToy._id}
                           myToy={myToy}
+                          handleDelete={handleDelete}
                           >
 
                           </MyToyRow>)
