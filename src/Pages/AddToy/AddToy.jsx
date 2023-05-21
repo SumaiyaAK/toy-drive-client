@@ -8,9 +8,9 @@ const AddToy = () => {
     const { ToyName, _id, Price } = addToys;
     const {user} = useContext(AuthContext);
 
-    const handleAddToys = event =>{
-        event.preventDafault();
-
+    const handleAddToys = event => {
+       event.preventDefault();
+        // console.log('add toy')
         const form = event.target;
         const name = form.name.value;
         const Photo_URL = form.Photo_URL.value;
@@ -24,6 +24,7 @@ const AddToy = () => {
             sellerName: name,
             email,
             Price,
+            toy:ToyName,
             toy_id: _id,
             Sub_category,
             Rating,
@@ -32,13 +33,27 @@ const AddToy = () => {
         }
         console.log(addToysPost)
 
+        fetch('http://localhost:5000/addToy', {
+            method:'POST',
+            headers: {
+                 'content-type': 'application/json'
+            },
+            body: JSON.stringify(addToysPost)
+
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+        })
+
+
     }
     return (
         <div className="max-w-7xl mx-auto min-h-screen">
             <h1 className="text-center font-bold mt-20 text-3xl text-red-600">Add A Toy: {ToyName}</h1>
 
             <div className="card-body">
-                <form>
+                <form onSubmit={handleAddToys}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="form-control">
                         <label className="label">
