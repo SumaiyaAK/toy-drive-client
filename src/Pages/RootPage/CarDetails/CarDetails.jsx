@@ -1,7 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const CarDetails = () => {
     let { state } = useLocation();
+    
 
     let description = (state != null) ? state['Description'] : null;
     let _id = (state != null) ? state['_id'] : null;

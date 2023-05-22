@@ -48,13 +48,15 @@ const Categories = () => {
                     
                     let imageElement = <figure><img className='w-2/5' src={toys[toyIndex]['Img']} alt="cars" /></figure>;
                     
-                    let cardBodyElement = <div className="card-body">
+                    let cardBodyElement = <div className="grid grid-cols-1 lg:grid-cols-2">
+                        <div className="card-body">
                         <h2 className="card-title">Name: {toys[toyIndex]['ToyName']}</h2>
                         <p>Price: {toys[toyIndex]['Price']}</p>
                         <p>Rating: {toys[toyIndex]['Rating']}</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary" onClick={() => handleViewDetails(toys, toyIndex, navigate)}>View Details</button>
+                            <button className="btn btn-error btn-outline" onClick={() => handleViewDetails(toys, toyIndex, navigate)}>View Details</button>
                         </div>
+                    </div>
                     </div>
                     tabElement.push(
                         <>

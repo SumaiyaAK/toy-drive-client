@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
@@ -8,7 +8,7 @@ import app from "../../firebase/firebase.config";
 
 const auth = getAuth(app)
 const Login = () => {
-
+    
     const {signIn} = useContext(AuthContext);
     const googleAuthProvider = new GoogleAuthProvider();
 
@@ -32,6 +32,7 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user)
+            
         })
         .catch(error => {
             console.log('error', error.message);

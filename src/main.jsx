@@ -49,8 +49,9 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
-        path: 'car_details',
-        element: <CarDetails></CarDetails>
+        path: '/car_details',
+        element: <PrivateRoute><CarDetails></CarDetails></PrivateRoute>,
+        // loader: ({params}) => fetch(`http://localhost:5000/alltoys/${params.id}`)
       },
       {
         path: 'addToy/:id',
@@ -72,7 +73,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <div className=''>
+  <div className='max-w-screen-fit'>
     <React.StrictMode>
       <AuthProviders>
         <RouterProvider router={router} />

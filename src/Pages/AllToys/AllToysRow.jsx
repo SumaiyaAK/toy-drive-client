@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-
 
 const AllToysRow = ({ allToys }) => {
+    
 
     
     const { Seller, ToyName, Sub_Category, Price, Img, AvailableQuantity } = allToys;
@@ -31,12 +30,15 @@ const AllToysRow = ({ allToys }) => {
             <th>
 
                
-                <Link to='/car_details'><button  className="btn btn-error btn-outline btn-xs">View Details</button></Link>
+                <button  className="btn btn-error btn-outline btn-xs">View Details</button>
+                
 
                 
             </th>
         </tr>
     );
+   
+
 };
 
 export default AllToysRow;
