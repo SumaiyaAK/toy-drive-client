@@ -1,10 +1,16 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from "../../firebase/firebase.config";
 
+
+
+const auth = getAuth(app)
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
+    const googleAuthProvider = new GoogleAuthProvider();
 
     const handleLogin = event => {
 
@@ -19,6 +25,17 @@ const Login = () => {
             console.log(user)
         })
         .catch(error => console.log(error))
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithPopup(auth, googleAuthProvider)
+        .then(result => {
+            const user = result.user;
+            console.log(user)
+        })
+        .catch(error => {
+            console.log('error', error.message);
+        })
     }
 
     return (
@@ -50,6 +67,10 @@ const Login = () => {
                                     <div className="form-control mt-6">
                                         {/* <button className="btn btn-outline btn-error">Login</button> */}
                                         <input className="btn btn-outline btn-error" type='submit' value='Login'></input>
+                                    </div>
+                                    <div className="form-control mt-6">
+                                        {/* <button className="btn btn-outline btn-error">Login</button> */}
+                                        <input onClick={handleGoogleSignIn} className="btn btn-outline btn-error" type='submit' value='Google Login'></input>
                                     </div>
                                 </form>
                                 <p>If you do not have an account <br></br><Link className='text-red-400 font-bold'to='/register'>Register</Link></p>
